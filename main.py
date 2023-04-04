@@ -37,7 +37,7 @@ class Instructor:
                 self.model = opt.model_class(absa_dataset.embedding_matrix, opt).to(opt.device)
             elif opt.transfer == '14-15':
                 assert opt.dataset == 'rest15' and opt.model_name == 'segcn_transfer'
-                params = torch.load('state_dict/segcn_rest14/acc_75.18_f1_61.36.pkl')
+                params = torch.load('state_dict/segcn_rest14/acc_xx.xx_f1_xx.xx.pkl')
                 sentemb_matrix = params['sentiment_embed.weight'].cpu().numpy()
                 print('load rest14 sentiment nodes')
                 self.model = opt.model_class(absa_dataset.embedding_matrix, sentemb_matrix, opt).to(opt.device)
@@ -75,10 +75,7 @@ class Instructor:
             print('>>> {0}: {1}'.format(arg, getattr(self.opt, arg)))
 
     def _reset_params(self):
-        for child, (name, _) in zip(self.model.children(), self.model.named_parameters()):
-            if self.opt.transfer != 'none':
-                if name == "sentiment_embed.weight":  # skip sentiment nodes
-                    continue
+        for child in self.model.children():
             if type(child) != BertModel:  # skip bert params
                 for p in child.parameters():
                     if p.requires_grad:
