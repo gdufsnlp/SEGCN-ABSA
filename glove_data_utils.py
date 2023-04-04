@@ -41,11 +41,6 @@ def build_embedding_matrix(word2idx, embed_dim, type):
     return embedding_matrix
 
 
-def build_sentemb_matrix(embed_dim):
-    params = torch.load('state_dict/segcn_rest14/acc_81.96_f1_73.38.pkl')
-    return params['sentiment_embed.weight'].cpu().numpy()
-
-
 def opinion_lexicon():
     pos_file = 'lexicon/positive-words.txt'
     neg_file = 'lexicon/negative-words.txt'
