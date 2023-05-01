@@ -8,7 +8,6 @@ Code for Paper "Store, share and transfer: Learning and updating sentiment knowl
 ## **Requirements**
 - python==3.7.13
 - torch==1.11.0+cu113
-- spacy==3.3.1
 - transformers==4.2.2
 - scikit-learn==1.0.2
 
