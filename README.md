@@ -1,6 +1,8 @@
 # **SEGCN-ABSA**
 
-Code for Paper "Store, share and transfer: Learning and updating sentiment knowledge for aspect-based sentiment analysis", *Information Sciences*
+Code for Paper "Store, share and transfer: Learning and updating sentiment knowledge for aspect-based sentiment analysis",
+*Information Sciences*,2023,Volume 635,Pages 151-168
+Yongqiang Zheng,Xia Li and Jian-Yun Nie
 
 ## **Model**
 ![](model.png)
@@ -50,10 +52,12 @@ The code in this repository is based on [ASGCN](https://github.com/GeneZC/ASGCN)
 
 ## **Citation**
 ```bibtex
-@article{ZHENG2023,
+@article{ZHENG2023151,
     title = {Store, share and transfer: Learning and updating sentiment knowledge for aspect-based sentiment analysis},
     author = {Yongqiang Zheng and Xia Li and Jian-Yun Nie},
     journal = {Information Sciences},
+    volume = {635},
+    pages = {151-168},
     year = {2023},
     issn = {0020-0255},
     doi = {https://doi.org/10.1016/j.ins.2023.03.102},
