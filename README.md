@@ -2,9 +2,9 @@
 
 Code for Paper "Store, share and transfer: Learning and updating sentiment knowledge for aspect-based sentiment analysis"
 
-*Information Sciences*,2023,Volume 635,Pages 151-168
+*Information Sciences*, 2023, Volume 635, Pages 151-168
 
-Yongqiang Zheng,Xia Li and Jian-Yun Nie
+Yongqiang Zheng, Xia Li and Jian-Yun Nie
 
 ## **Model**
 ![](model.png)
