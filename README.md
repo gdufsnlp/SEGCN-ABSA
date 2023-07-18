@@ -34,10 +34,10 @@ rm glove.840d.300d.zip
 ```
 2. Download Bing Liu's opinion lexicon
 ```
-wget -O lexicon.tar.gz http://www.cs.uic.edu/\~liub/FBS/opinion-lexicon-English.rar
-mkdir lexicon
-tar -xzvf lexicon.tar.gz -C lexicon/ --strip-components 1
-rm lexicon.tar.gz
+wget http://www.cs.uic.edu/\~liub/FBS/opinion-lexicon-English.rar
+sudo apt-get install unrar
+rar x opinion-lexicon-English.rar
+rm opinion-lexicon-English.rar
 ```
 3. Generate sentiment-enhanced graph
 ```
