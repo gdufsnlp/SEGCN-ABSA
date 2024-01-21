@@ -36,8 +36,8 @@ rm glove.840d.300d.zip
 ```
 wget http://www.cs.uic.edu/\~liub/FBS/opinion-lexicon-English.rar
 sudo apt-get install unrar
-rar x opinion-lexicon-English.rar
-rm opinion-lexicon-English.rar
+unrar x opinion-lexicon-English.rar
+mv opinion-lexicon-English lexicon
 ```
 3. Generate sentiment-enhanced graph
 ```
